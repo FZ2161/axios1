@@ -1,8 +1,9 @@
 body{
     background-color: dimgray;
-    display: flex;
-    flex-wrap: wrap;
     gap: 5PX;
+    display: grid;
+    grid-template-columns: 100%;
+    grid-template-rows: 20vh 80vh;
 
 }
 
@@ -15,4 +16,33 @@ body{
 
     width: 200px;
     height: 200px;
+}
+
+.label{
+    margin: 10px;
+    padding: 5px;
+    width: 150px;
+    height: auto;
+
+    border: 1px solid black;
+    text-align: center;
+    display: inline-block;
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: center;
+
+    background-color: gray;
+
+    font-size: 20px;
+
+}
+#options{
+    display: grid;
+    grid-template-columns: 100%;
+    grid-template-rows: 10% 90%;
+}
+
+#box{
+    display: flex;
+    flex-wrap: wrap;
 }

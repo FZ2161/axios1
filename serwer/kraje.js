@@ -33,6 +33,14 @@ app.get('/all', (req, res)=>{
     })
 })
 
+app.get('/max', (req,res)=>{
+    const sql1 = `SELECT MAX(population) as max FROM kraje `
+    con.query(sql1, (err, results)=>{
+        if(err) console.log(err)
+        res.send(results)
+    })
+})
+
 
 
 
